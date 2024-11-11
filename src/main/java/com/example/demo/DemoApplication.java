@@ -10,14 +10,14 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 		
-		ProductService service = new ProductService();
-		List<Product> products = service.getAllProduct();
+		ProductService service = new ProductService(); // develop manually making a new obj, means also reponsible for deleting it
+		service.show();
         
         // enhanced for loop
-        for(Product prod : products){
-            System.out.println(prod);
-        }
-        System.out.println("============================================================");
+        // for(Product prod : products){
+        //     System.out.println(prod);
+        // }
+        // System.out.println("============================================================");
 	}
 
 }
