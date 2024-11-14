@@ -1,9 +1,10 @@
 package com.example.demo;
-
+import org.springframework.stereotype.Component;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
+@Component // makes objects itself and handles it for one
 public class ProductService {
     public void show(){
         System.out.println("Show");
